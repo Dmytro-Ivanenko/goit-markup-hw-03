@@ -94,7 +94,6 @@ body {
   display: flex;
 
   margin-right: 93px;
-
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -145,8 +144,16 @@ body {
 .hero {
   color: var(--hero-col);
   background-color: var(--f-bcg-col);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.35;
@@ -156,16 +163,21 @@ body {
 }
 
 .hero-btn {
+  padding: 10px 32px;
+  width: 216px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   color: var(--hero-col);
   background-color: var(--acc-col);
-
   text-align: center;
   letter-spacing: 0.06em;
+  border: 0;
+  border-radius: 4px;
 }
+
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--btn-hover-bcg-col);
