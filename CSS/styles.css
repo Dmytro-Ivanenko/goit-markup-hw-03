@@ -47,12 +47,12 @@ h6 {
   margin: 0;
 }
 
-html {
-  width: 1600px;
+p {
+  margin: 0;
 }
 
 .container {
-  width: 1200px;
+  width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
@@ -71,7 +71,16 @@ body {
   letter-spacing: 0.03em;
 }
 .hiden-title {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .list {
@@ -142,11 +151,12 @@ body {
 
 /* Hero */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   color: var(--hero-col);
   background-color: var(--f-bcg-col);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 .hero-title {
   width: 696px;
@@ -164,7 +174,9 @@ body {
 
 .hero-btn {
   padding: 10px 32px;
-  width: 216px;
+  min-width: 216px;
+  border: 0;
+  border-radius: 4px;
 
   font-family: inherit;
   font-weight: 700;
@@ -174,8 +186,6 @@ body {
   background-color: var(--acc-col);
   text-align: center;
   letter-spacing: 0.06em;
-  border: 0;
-  border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -185,10 +195,26 @@ body {
 }
 
 /* Advantges */
+
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.advantages .list {
+  display: flex;
+}
+
+.plus-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .plus-item {
   display: block;
+  flex-basis: 270px;
 }
 .plus-title {
+  margin-bottom: 10px;
+
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
