@@ -52,7 +52,7 @@ p {
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
@@ -65,6 +65,8 @@ body {
 }
 
 .sect-title {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -86,6 +88,11 @@ body {
 .list {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
 }
 
 /* Header */
@@ -230,8 +237,22 @@ body {
 
 /* What we do */
 
+.services {
+  padding-bottom: 94px;
+}
+
+.services-items {
+  display: flex;
+}
+.services-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* Staff */
 .staff {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   background-color: var(--alt-bcg-col);
   font-size: 16px;
   text-align: center;
@@ -239,9 +260,22 @@ body {
 }
 
 .staff-item {
+  display: block;
+  width: 270px;
+  padding-bottom: 30px;
+
   background-color: var(--m-bcg-col);
 }
+.staff-items {
+  display: flex;
+  column-gap: 30px;
+  flex-wrap: wrap;
+}
+
 .name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -256,7 +290,18 @@ body {
 /* Footer */
 
 .foot {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--f-bcg-col);
+}
+
+.foot .logo {
+  margin-bottom: 20px;
+}
+
+.address-foot-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .list.adress {
@@ -278,7 +323,7 @@ body {
   color: var(--foot-alph-col);
 }
 
-/*--- Main portfolio.html zone --- */
+/*----- Main portfolio.html zone ----- */
 
 /* Filter */
 

@@ -102,10 +102,10 @@
       </section>
 
       <!-- What we do -->
-      <section class="services">
+      <section class="services container">
         <h2 class="sect-title">Чем мы занимаемся</h2>
-        <ul class="list">
-          <li>
+        <ul class="services-items list">
+          <li class="services-item">
             <a href=""
               ><img
                 src="./imagies/our-services/codding.jpg"
@@ -114,7 +114,7 @@
                 height="294"
             /></a>
           </li>
-          <li>
+          <li class="services-item">
             <a href=""
               ><img
                 src="./imagies/our-services/design.jpg"
@@ -123,7 +123,7 @@
                 height="294"
             /></a>
           </li>
-          <li>
+          <li class="services-item">
             <a href=""
               ><img
                 src="./imagies/our-services/customisation.jpg"
@@ -136,11 +136,12 @@
       </section>
 
       <!-- Staff -->
-      <section class="staff">
+      <section class="staff container">
         <h2 class="sect-title">Наша команда</h2>
-        <ul class="list">
+        <ul class="staff-items list">
           <li class="staff-item">
             <img
+              class="portrait"
               src="./imagies/staff/ihor.jpg"
               alt="Игорь Демьяненко"
               width="270"
@@ -152,6 +153,7 @@
 
           <li class="staff-item">
             <img
+              class="portrait"
               src="./imagies/staff/olga.jpg"
               alt="Ольга Репина"
               width="270"
@@ -163,6 +165,7 @@
 
           <li class="staff-item">
             <img
+              class="portrait"
               src="./imagies/staff/nikolay.jpg"
               alt="Николай Тарасов"
               width="270"
@@ -174,6 +177,7 @@
 
           <li class="staff-item">
             <img
+              class="portrait"
               src="./imagies/staff/mihail.jpg"
               alt="Михаил Ермаков"
               width="270"
@@ -187,32 +191,34 @@
     </main>
 
     <!-- Footer -->
-    <footer class="foot container">
-      <a class="logo foot-item" href="./index.html"
-        ><span class="logo-acc">Web</span>Studio</a
-      >
-      <address>
-        <ul class="list adress">
-          <li>
-            <a
-              class="link foot-item"
-              href="https://goo.gl/maps/ffjyEgsYqTHCnrhD7"
-              target="_blank"
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li>
-            <a class="link foot-item-cont" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="link foot-item-cont" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+    <footer class="foot">
+      <div class="container">
+        <a class="logo foot-item" href="./index.html"
+          ><span class="logo-acc">Web</span>Studio</a
+        >
+        <address>
+          <ul class="list adress">
+            <li class="address-foot-item">
+              <a
+                class="link foot-item"
+                href="https://goo.gl/maps/ffjyEgsYqTHCnrhD7"
+                target="_blank"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li class="address-foot-item">
+              <a class="link foot-item-cont" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="address-foot-item">
+              <a class="link foot-item-cont" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
