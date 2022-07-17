@@ -65,6 +65,11 @@ body {
   background-color: var(--m-bcg-col);
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .sect-title {
   margin-bottom: 50px;
 
@@ -210,10 +215,6 @@ img {
 
 /* Advantges */
 
-.advantages {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .advantages .list {
   display: flex;
 }
@@ -245,7 +246,7 @@ img {
 /* What we do */
 
 .services {
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 
 .services-items {
@@ -257,9 +258,6 @@ img {
 
 /* Staff */
 .staff {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
   background-color: var(--alt-bcg-col);
   font-size: 16px;
   text-align: center;
@@ -335,7 +333,7 @@ img {
 /* Filter */
 
 .filter {
-  padding-top: 103px;
+  padding-top: 10px;
   padding-bottom: 50px;
 }
 
@@ -370,10 +368,6 @@ img {
 }
 
 /* Examples */
-
-.portfolio {
-  padding-bottom: 94px;
-}
 
 .example-items {
   display: flex;
