@@ -3,7 +3,7 @@
 main    bcg-color: #fff;
 alt     bcg-color: #F5F4FA;
 footer  bcg-color: #2F303A;
-card    bcg-color: #eee;
+card    bcg-color: #fff;
 
 main    color: #212121;
 alt     color: #757575;
@@ -30,13 +30,14 @@ font-family: 'Roboto', sans-serif;
   --btn-alt-col: #fff;
   --btn-hover-bcg-col: #188ce8;
   --foot-alph-col: rgba(255, 255, 255, 0.6);
-  --card-bcg-col: #eee;
+  --card-bcg-col: #fff;
+  --card-border-col: #eee;
   --header-border-col: #ececec;
 }
 
-* {
+/* * {
   outline: maroon solid 2px;
-}
+} */
 
 h1,
 h2,
@@ -97,6 +98,8 @@ img {
 
 /* Header */
 .header {
+  padding-top: 24px;
+  padding-bottom: 25px;
   border-bottom: 1px solid var(--header-border-col);
 }
 
@@ -135,6 +138,10 @@ img {
 .link:focus,
 .link.foot-item:hover,
 .link.foot-item:focus {
+  color: var(--acc-col);
+}
+
+.active-page {
   color: var(--acc-col);
 }
 
@@ -327,7 +334,22 @@ img {
 
 /* Filter */
 
-.btn-list-item {
+.filter {
+  padding-top: 103px;
+  padding-bottom: 50px;
+}
+
+.filter-items {
+  display: flex;
+  flex-basis: 575px;
+  column-gap: 8px;
+  justify-content: center;
+}
+
+.filter-item {
+  padding: 6px 22px;
+  min-width: 73px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -336,10 +358,12 @@ img {
   letter-spacing: 0.03em;
   background-color: var(--alt-bcg-col);
   color: var(--m-col);
+  border: none;
+  border-radius: 4px;
 }
 
-.btn-list-item:hover,
-.btn-list-item:focus {
+.filter-item:hover,
+.filter-item:focus {
   background-color: var(--acc-col);
   color: var(--btn-alt-col);
   cursor: pointer;
@@ -347,13 +371,31 @@ img {
 
 /* Examples */
 
+.portfolio {
+  padding-bottom: 94px;
+}
+
+.example-items {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
 .example-item {
   background-color: var(--card-bcg-col);
 }
+
+.card-descr {
+  padding: 20px 24px;
+  border: 1px solid var(--card-border-col);
+  border-top: none;
+}
 .example-title {
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .example-type {
