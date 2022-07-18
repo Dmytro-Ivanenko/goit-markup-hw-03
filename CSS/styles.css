@@ -99,6 +99,7 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 /* Header */
@@ -332,14 +333,11 @@ img {
 
 /* Filter */
 
-.filter {
-  padding-top: 10px;
-  padding-bottom: 50px;
-}
-
 .filter-items {
   display: flex;
   flex-basis: 575px;
+  margin-bottom: 50px;
+
   column-gap: 8px;
   justify-content: center;
 }
